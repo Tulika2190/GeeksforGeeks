@@ -1,0 +1,13 @@
+class Solution{
+public:
+    int sumOfDigits(int N){
+        int  sum=0,r;
+        while(N>0)
+        {
+            r=N%10;
+            sum=sum+r;
+            N=N/10;
+        }
+     return sum;
+    }
+};
